@@ -1,0 +1,7 @@
+{
+    "source": "13-call-function-7.retrolix",
+    "arguments" : ["-s", "retrolix", "-t", "elf", "-r", "true", "-VV", "true"],
+    "exitcode": 0,
+    "expectation": ["Expect", {}],
+    "tags": ["machine"]
+}

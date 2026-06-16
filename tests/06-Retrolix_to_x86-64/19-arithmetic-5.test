@@ -1,0 +1,7 @@
+{
+    "source": "19-arithmetic-5.retrolix",
+    "arguments" : ["-s", "retrolix", "-t", "elf", "-r", "true", "-VV", "true"],
+    "exitcode": 0,
+    "expectation": ["Expect", {}],
+    "tags": ["machine"]
+}

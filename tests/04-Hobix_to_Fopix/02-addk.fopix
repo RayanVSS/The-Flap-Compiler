@@ -1,0 +1,17 @@
+def _1 (x, _2) =
+  (x + read_block (_2, 1))
+def addk (k, _1) =
+  val _3 = allocate_block (2) ;
+  val _5 = write_block (_3, 0, &_1) ;
+  val _4 = write_block (_3, 1, k) ; _3
+val addk =
+  val addk =
+    val _6 = allocate_block (2) ;
+    val _7 = write_block (_6, 0, &addk) ; _6
+    ;
+  val _8 = write_block (addk, 1, addk) ; addk
+val f =
+  val _9 = addk ; call (read_block (_9, 0)) with (41, _9)
+val main =
+  print_int
+  (val _10 = f ; call (read_block (_10, 0)) with (1, _10))

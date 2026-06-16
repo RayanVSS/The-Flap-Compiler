@@ -1,0 +1,46 @@
+def g (x, _3) =
+  if (x =? 0) then
+    0
+  else
+    val _4 = read_block (_3, 1) ;
+    call (read_block (_4, 0)) with ((x - 1), _4)
+  end
+def f (x, _1) =
+  if (x =? 0) then
+    1
+  else
+    val _2 = read_block (_1, 2) ;
+    call (read_block (_2, 0)) with ((x - 1), _2)
+  end
+val f =
+  val f =
+    val _5 = allocate_block (3) ;
+    val _6 = write_block (_5, 0, &f) ; _5
+    ;
+  val g =
+    val _7 = allocate_block (3) ;
+    val _8 = write_block (_7, 0, &g) ; _7
+    ;
+  val _12 = write_block (f, 1, f) ;
+  val _11 = write_block (f, 2, g) ;
+  val _10 = write_block (g, 1, f) ;
+  val _9 = write_block (g, 2, g) ; f
+val g =
+  val f =
+    val _5 = allocate_block (3) ;
+    val _6 = write_block (_5, 0, &f) ; _5
+    ;
+  val g =
+    val _7 = allocate_block (3) ;
+    val _8 = write_block (_7, 0, &g) ; _7
+    ;
+  val _16 = write_block (f, 1, f) ;
+  val _15 = write_block (f, 2, g) ;
+  val _14 = write_block (g, 1, f) ;
+  val _13 = write_block (g, 2, g) ; g
+val main =
+  print_int
+  (
+    val _17 = f ;
+    call (read_block (_17, 0)) with (20, _17)
+  )

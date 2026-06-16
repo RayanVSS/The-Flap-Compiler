@@ -1,0 +1,7 @@
+/_build
+/.vscode
+flap.opam
+src/*.exe
+testing/*.exe
+src/hopix/*.md
+*.html

@@ -1,0 +1,55 @@
+def apply (f, x, _1) =
+  val _2 = f ; call (read_block (_2, 0)) with (x, _2)
+val apply =
+  val apply =
+    val _3 = allocate_block (2) ;
+    val _4 = write_block (_3, 0, &apply) ; _3
+    ;
+  val _5 = write_block (apply, 1, apply) ; apply
+def apply2 (f, x, y, _6) =
+  val _7 = f ; call (read_block (_7, 0)) with (x, y, _7)
+val apply2 =
+  val apply2 =
+    val _8 = allocate_block (2) ;
+    val _9 = write_block (_8, 0, &apply2) ; _8
+    ;
+  val _10 = write_block (apply2, 1, apply2) ; apply2
+def _1 (_11, _12) =
+  print_int (_11)
+def _3 (_22, _23) =
+  print_int (_22)
+def _2 (_16, _17, _18) =
+  (_16 + _17)
+val main =
+  val __nothing__ =
+    val _15 = apply ;
+    call
+    (read_block (_15, 0))
+    with
+    (
+      val _13 = allocate_block (1) ;
+      val _14 = write_block (_13, 0, &_1) ; _13,
+      42,
+      _15
+    )
+    ;
+  val _26 = apply ;
+  call
+  (read_block (_26, 0))
+  with
+  (
+    val _24 = allocate_block (1) ;
+    val _25 = write_block (_24, 0, &_3) ; _24,
+    val _21 = apply2 ;
+    call
+    (read_block (_21, 0))
+    with
+    (
+      val _19 = allocate_block (1) ;
+      val _20 = write_block (_19, 0, &_2) ; _19,
+      31,
+      2,
+      _21
+    ),
+    _26
+  )

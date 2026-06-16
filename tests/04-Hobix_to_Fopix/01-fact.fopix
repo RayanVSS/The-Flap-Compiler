@@ -1,0 +1,18 @@
+def fact (n, _1) =
+  if (n =? 0) then
+    1
+  else
+    (n
+    *
+    val _2 = read_block (_1, 1) ;
+    call (read_block (_2, 0)) with ((n - 1), _2))
+  end
+val fact =
+  val fact =
+    val _3 = allocate_block (2) ;
+    val _4 = write_block (_3, 0, &fact) ; _3
+    ;
+  val _5 = write_block (fact, 1, fact) ; fact
+val main =
+  print_int
+  (val _6 = fact ; call (read_block (_6, 0)) with (5, _6))
